@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 di-maroo
+Copyright (c) 2023 Dmitry Marushchenko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
