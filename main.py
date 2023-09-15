@@ -15,6 +15,8 @@ def main():
     parser.add_argument('-r', '--rows', type=int, required=True, help='Number of rows to slice image into')
     args = parser.parse_args()
 
+    create_dir(args.output)
+
     # Load image
     img = Image.open(args.image)
     img = np.array(img)
@@ -36,6 +38,11 @@ def main():
             slice = img[start_height:end_height, start_width:end_width, :]
             slice = Image.fromarray(slice)
             slice.save(os.path.join(args.output, 'slice_{}_{}.png'.format(y, x)))
+
+# function creates a directory if it does not exist
+def create_dir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 if __name__ == '__main__':
     main()
