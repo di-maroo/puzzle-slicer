@@ -16,7 +16,7 @@ For example, if the image is 1920x1080 and the puzzle pattern is 19x10, the resu
 * Pillow
 * Numpy 
 
-### Installing
+### Installing dependencies
 
 ```commandline
 pip install pillow
@@ -26,7 +26,7 @@ pip install numpy
 
 
 ```commandline
-python puzzle_slicer.py -i <input_image> -r <rows> -c <columns>
+python puzzle_slicer.py -i <input_image> -r <rows> -c <columns> -o <output_folder>
 ```
 
 ## License
